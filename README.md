@@ -8,7 +8,7 @@ I’m building my transition into IT through hands-on infrastructure labs, techn
 
 - Based in Barcelona, Spain
 - Background in technical customer service, device troubleshooting, and on-site/home IT support
-- Currently focused on Linux system administration, AWS cloud fundamentals, and IT support roles
+- Currently focused on Linux system administration, cloud (AWS), and IT support roles
 - Preparing for the AWS Certified Cloud Practitioner
 - Building and documenting a multi-service Linux lab from scratch
 
