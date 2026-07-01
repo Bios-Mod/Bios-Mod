@@ -6,7 +6,7 @@ IT professional with years of experience in infrastructure, systems administrati
 I build and document real infrastructure from scratch. Two open source projects as evidence:
 
 
-── build-your-infra ──────────────────────────────────────────
+───────────── build-your-infra ─────────────
 
 Multi-environment infrastructure lab: local VM, VPS, and AWS Native — built and documented end to end with inline technical reasoning on every decision.
 
@@ -26,7 +26,7 @@ Automation with Terraform: reusable modules per service + full AWS Native stack 
 → github.com/Bios-Mod/build-your-infra
 
 
-── containerize-your-infra ───────────────────────────────────
+───────────── containerize-your-infra ─────────────
 
 Same infrastructure stack, containerized with Docker — built and documented end to end.
 
@@ -47,7 +47,7 @@ Next: Kubernetes as the natural evolution of the Docker Compose stack.
 → github.com/Bios-Mod/containerize-your-infra
 
 
-── Stack ─────────────────────────────────────────────────────
+───────────── Stack ─────────────
 
 AWS          EC2 · S3 · CloudFront · Route 53 · IAM · VPC · GuardDuty · CloudTrail · Transfer Family · Directory Service · SSM
 IaC          Terraform (modules · remote state S3+DynamoDB · user_data · multi-module stacks)
@@ -59,7 +59,7 @@ Scripting    Bash · Git
 Next         Ansible · Kubernetes
 
 
-── Certifications ────────────────────────────────────────────
+───────────── Certifications ─────────────
 
 - AWS Cloud Practitioner — May 2026
 - Google IT Support Professional — April 2026
@@ -67,7 +67,7 @@ Next         Ansible · Kubernetes
 - Preparing: AWS Solutions Architect Associate
 
 
-── Contact ───────────────────────────────────────────────────
+───────────── Contact ─────────────
 
 LinkedIn → linkedin.com/in/agustin-maximiliano-alvarez
 Location → Montcada i Reixac, Barcelona · Open to hybrid / remote
