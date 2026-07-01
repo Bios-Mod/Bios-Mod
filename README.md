@@ -1,57 +1,74 @@
-# Agustín Maximiliano Álvarez
+Agustín Maximiliano Álvarez
+SysAdmin & Cloud Infrastructure | AWS · Terraform · Docker · Linux | Barcelona
 
-SysAdmin & Cloud Infrastructure | AWS Native & Linux | IT Support
+IT professional with years of experience in infrastructure, systems administration, and technical support — actively transitioning into cloud engineering with a focus on AWS.
 
-I am an IT professional based in Barcelona with more than 10 years of hands-on experience across technical support, infrastructure, and systems administration.
+I build and document real infrastructure from scratch. Two open source projects as evidence:
 
-I am currently specializing in Linux infrastructure and AWS Native services, with a strong focus on practical deployment, hardening, troubleshooting, and technical documentation.
 
-## About me
+── build-your-infra ──────────────────────────────────────────
 
-- Based in Montcada i Reixac, Barcelona
-- Target roles: SysAdmin, Cloud Engineer, Infrastructure, IT Support
-- Working with Linux, AWS, networking, system hardening, and Bash
-- Currently preparing AWS Solutions Architect Associate
-- Languages: Spanish (native), English (B1/B2)
+Multi-environment infrastructure lab: local VM, VPS, and AWS Native — built and documented end to end with inline technical reasoning on every decision.
 
-## Core stack
+Services deployed (self-managed and AWS managed equivalents, side by side):
+- DNS: BIND9 / Route 53 (Private Hosted Zones)
+- Web server: Nginx + HTTPS / CloudFront + S3 + ACM
+- File transfer: SFTP (OpenSSH hardened) / AWS Transfer Family
+- Directory: Samba 4 AD DC + Kerberos / AWS Directory Service
+- VPN: WireGuard hub-and-spoke over EC2
 
-- Linux: Ubuntu Server 24.04 LTS, system administration, hardening, SSH, systemd, Netplan
-- AWS: EC2, S3, CloudFront, ACM, Route 53, IAM, VPC, Security Hub, GuardDuty, CloudTrail, AWS Transfer Family, AWS Directory Service, SSM Session Manager
-- Infrastructure services: Nginx, BIND9, Samba 4 AD, Kea DHCP, OpenSSH SFTP, WireGuard
-- Security: UFW, Fail2Ban, AppArmor, auditd, AIDE, sysctl hardening, IMDSv2, Lynis
-- Scripting and tooling: Bash, Git, GitHub
+AWS stack: EC2 (Graviton2 · ARM64), S3, CloudFront, ACM, Route 53, IAM, VPC, Transfer Family, Directory Service, GuardDuty, CloudTrail, Security Hub, SSM Session Manager, IMDSv2
 
-## Featured project
+Linux hardening: UFW, Fail2Ban, AppArmor, auditd, AIDE, rsyslog, sysctl, rkhunter — Lynis score 90 on EC2 / 88 on VM
 
-### build-your-infra
-A multi-environment infrastructure project built and documented end to end across local VM, VPS, and AWS Native services.
+Automation with Terraform: reusable modules per service + full AWS Native stack in a single terraform apply. Ansible in active implementation for full provisioning from scratch without AMI snapshot dependency.
 
-It includes DNS, web server, file transfer, directory services, VPN connectivity, Linux hardening, and side-by-side comparison between self-managed services and AWS managed equivalents.
+→ github.com/Bios-Mod/build-your-infra
 
-Key highlights:
-- Ubuntu Server 24.04 LTS on ARM64 and x86_64
-- AWS Native services deployed and documented
-- Linux hardening applied in depth
-- Lynis score: 88 on VM and 90 on EC2
-- Clear technical reasoning documented inline
 
-Repository:
-- [build-your-infra](https://github.com/Bios-Mod/build-your-infra)
+── containerize-your-infra ───────────────────────────────────
 
-## Certifications
+Same infrastructure stack, containerized with Docker — built and documented end to end.
+
+Services deployed:
+- DNS: BIND9
+- Web server: Nginx
+- File transfer: SFTP (atmoz/sftp)
+- Reverse proxy + TLS: Traefik v3
+
+Environments: dev (OrbStack / macOS Apple Silicon) and prod (Docker Engine / Ubuntu 24.04 LTS / EC2 ARM64). ARM64-agnostic architecture across both environments.
+
+Automation with Terraform: provisions VPC, subnet, security groups, key pair, and EC2 — user_data installs Docker Engine, clones the repo, and launches the full stack on first boot with zero manual steps on the host.
+
+CI/CD with GitHub Actions: pipelines for Terraform lint/validate, Docker image build, and automated deploy to EC2.
+
+Next: Kubernetes as the natural evolution of the Docker Compose stack.
+
+→ github.com/Bios-Mod/containerize-your-infra
+
+
+── Stack ─────────────────────────────────────────────────────
+
+AWS          EC2 · S3 · CloudFront · Route 53 · IAM · VPC · GuardDuty · CloudTrail · Transfer Family · Directory Service · SSM
+IaC          Terraform (modules · remote state S3+DynamoDB · user_data · multi-module stacks)
+Containers   Docker Engine · Docker Compose v2 · Traefik v3 · Nginx · BIND9 · SFTP
+CI/CD        GitHub Actions
+Linux        Ubuntu Server 24.04 LTS · ARM64 + x86_64 · systemd · Netplan
+Security     UFW · Fail2Ban · AppArmor · auditd · AIDE · WireGuard · CIS Benchmark L1
+Scripting    Bash · Git
+Next         Ansible · Kubernetes
+
+
+── Certifications ────────────────────────────────────────────
 
 - AWS Cloud Practitioner — May 2026
-- Google IT Support — April 2026
-- Higher Technician in IT Infrastructure Systems Support — 3-year program, Argentina (2019)
+- Google IT Support Professional — April 2026
+- Higher Technician in IT Infrastructure Systems Support — Argentina, 2019
+- Preparing: AWS Solutions Architect Associate
 
-## Professional background
 
-My background combines technical support, infrastructure troubleshooting, hardware and software diagnostics, user support, and operational responsibility in customer-facing environments.
+── Contact ───────────────────────────────────────────────────
 
-That experience helps me bring a practical approach to systems work: fast diagnosis, clear communication, prioritization, and structured problem solving.
-
-## Contact
-
-- LinkedIn: [linkedin.com/in/agustin-maximiliano-alvarez](https://linkedin.com/in/agustin-maximiliano-alvarez)
-- GitHub project: [github.com/Bios-Mod/build-your-infra](https://github.com/Bios-Mod/build-your-infra)
+LinkedIn → linkedin.com/in/agustin-maximiliano-alvarez
+Location → Montcada i Reixac, Barcelona · Open to hybrid / remote
+Languages → Spanish (native) · English (B1/B2) · Catalan (functional)
