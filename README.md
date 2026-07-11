@@ -23,6 +23,10 @@ Linux hardening: UFW, Fail2Ban, AppArmor, auditd, AIDE, rsyslog, sysctl, rkhunte
 
 Automation with Terraform: reusable modules per service + full AWS Native stack in a single terraform apply. Ansible in active implementation for full provisioning from scratch without AMI snapshot dependency.
 
+CI/CD with GitHub Actions: pipelines for Terraform lint/validate. Syntax validate for config files and paths consistency.
+
+Next: Ansible for automated infra setup.
+
 → github.com/Bios-Mod/build-your-infra
 
 
@@ -32,7 +36,7 @@ Same infrastructure stack, containerized with Docker — built and documented en
 
 Services deployed:
 - DNS: BIND9
-- Web server: Nginx
+- Web server: Nginx custom image
 - File transfer: SFTP (atmoz/sftp)
 - Reverse proxy + TLS: Traefik v3
 
@@ -61,9 +65,9 @@ Next         Ansible · Kubernetes
 
 ───────────── Certifications ─────────────
 
-- AWS Cloud Practitioner — May 2026
-- Google IT Support Professional — April 2026
-- Higher Technician in IT Infrastructure Systems Support — Argentina, 2019
+- AWS Cloud Practitioner
+- Google IT Support Professional
+- Higher Technician in IT Infrastructure Systems Support
 - Preparing: AWS Solutions Architect Associate
 
 
